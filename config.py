@@ -1,0 +1,4 @@
+# config.py
+
+DISCORD_TOKEN = "ODI1Nzg0Nzg0MDAwMzg1MDQ1.YGC-Ag.TRJy575JapdOobhWwV1pi0DN1kk"
+MAIN_CHANNEL_CATEGORY = "Text Channels"
