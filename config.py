@@ -1,4 +1,0 @@
-# config.py
-
-DISCORD_TOKEN = "[TOKEN HERE]"
-MAIN_CHANNEL_CATEGORY = "Text Channels"

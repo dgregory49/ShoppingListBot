@@ -1,9 +1,12 @@
 # main.py
 
+import os
 import discord
-import config
+from dotenv import load_dotenv
 
-TOKEN = config.DISCORD_TOKEN
+load_dotenv()
+TOKEN = os.getenv("DISCORD_TOKEN")
+
 client = discord.Client()
 
 @client.event
@@ -11,7 +14,7 @@ async def on_raw_reaction_add(reaction):
     
     channel = await client.fetch_channel(reaction.channel_id)
 
-    if str(channel.category) != config.MAIN_CHANNEL_CATEGORY: 
+    if str(channel.category) != os.getenv("MAIN_CHANNEL_CATEGORY"): 
         return
 
     message = await channel.fetch_message(reaction.message_id)
